@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全新达长图文模板</title>
+    <script src="https://test-docdiff.kydev.net/config/js/tailwind.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root{
+            --my-text-shadow: ;
+        }
+        body{
+            /*为了解决rem设置的fontSize对行内元素的影响必须设置*/
+            font: 12px 'Microsoft YaHei', '宋体', Heiti SC, HelveticaNeue, Helvetica;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            height: auto;
+            color: #333;
+            background-color: #fff;
+            position: relative;
+            -webkit-text-size-adjust: none;
+            /*在苹果手机内容滚动的时候不会卡顿*/
+            -webkit-overflow-scrolling: touch;
+            overflow-scrolling: touch;
+        }
+        table {
+            border-collapse: collapse; /* 合并边框 */
+            width: 100%; /* 可选：设置表格宽度 */
+        }
+        tr:nth-of-type(1) th{
+            background: #07b3bc;
+            color: #FFFFFF;
+        }
+        /* 条形码 */
+        tr:nth-of-type(odd){
+            background: #e2f6f6;
+        }
+        tr:nth-of-type(even){
+            background: #f2f2f2;
+        }
+        td, th {
+            padding: 5px;
+            border: 2px solid #FFFFFF; /* 1px宽度，实线，黑色 */
+            text-align: center;
+        }
+        ol,li{
+            list-style: inside;
+            list-style-type: decimal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 页面整体 -->
+    <div class="container min-w-[750px] mx-auto max-w-[750px] bg-gradient-to-b from-[#0082b4] via-[#9adada] to-[#9adada]">
+        <!-- 头部-仅替换其中的标题内容 即可 -->
+        <header class="w-full min-h-72 mb-5 relative">
+            <div class="w-full absolute top-0 left-0">
+                <div class="w-full p-5 px-10 pt-8 flex justify-between items-center relative z-10">
+                    <img src="https://test-docdiff.kydev.net/config/image/novartis3.png" alt="novartis"
+                        class="w-[170px] h-auto" />
+                    <img src="https://test-docdiff.kydev.net/config/image/logo3.png" alt="logo" class="w-[130px] h-auto" />
+                </div>
+                <img src="https://test-docdiff.kydev.net/config/image/kv2.png" alt="kv" class="w-full h-auto absolute top-0 left-0" />
+            </div>
+            <div class="w-full py-5 pt-40 px-10 relative z-10" style="text-shadow: 3px 3px 5px rgba(90,199,196,1);">
+                <span class="block text-4xl py-2 font-bold text-white text-center">
+                    MS诊断"新地图"发布！2024 McDonald标准更新，如何帮你更快找到方向？
+                </span>
+            </div>
+        </header>
+        <!-- 主体内容-可随意插入多个个section元素模板 -->
+        <main class="w-full min-h-[500px] p-5 px-10 mb-4 text-black text-lg flex flex-col gap-10">
+            <!-- section-模板一 -->
+            <section class="w-full relative shadow-xl shadow-white/50">
+                <!-- 标题元素-仅替换其中的标题内容 -->
+                <section class="w-full text-2xl font-bold text-white bg-gradient-to-r from-[#5ac7c6] to-[#0082b4] rounded-t-md p-5 pl-[60px] relative">
+                    <img src="https://test-docdiff.kydev.net/config/image/icon.png" alt="icon" class="w-[80px] h-auto absolute top-0 left-0" />
+                    <span class="relative z-10">段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1段落标题1</span>
+                </section>
+                <!-- 内容元素-可随意插入文本内容元素、图片内容元素、和表格内容元素 -->
+                <section class="w-full bg-white border-2 border-[#9adada] rounded-b-md p-4">
+                    <!-- 文本内容元素的div--如果文本内容数据则删除此div元素 -->
+                    <div class="w-full mb-5">
+                        <span><strong>多发性硬化</strong>诊断延迟/不足亟待改进，基于证据和学术进展，更新诊断标准，建立预后评估新模型，以期构建个性化治疗体系更好指导临床；
+                        </span>
+                        <p>表8常用降压药的<strong>强适应证</strong>,</p>
+                    </div>
+                    <!-- 表格内容元素的div--如果没有表格数据则删除此div元素 -->
+                    <div class="w-full overflow-x-auto flex justify-center mb-5">
+                        <table>
+                            <tr>
+                                <th>适应证</th>
+                                <th>CCB</th>
+                                <th>ACEI</th>
+                                <th>ARB</th>
+                                <th>利尿剂</th>
+                                <th>β受体阻滞剂</th>
+                            </tr>
+                            <tr>
+                                <td>左心室肥厚</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>±</td>
+                                <td>±</td>
+                            </tr>
+                            <tr>
+                                <td>稳定性冠心病</td>
+                                <td>+</td>
+                                <td>+a</td>
+                                <td>+a</td>
+                                <td>1</td>
+                                <td>+</td>
+                            </tr>
+                            <tr>
+                                <td>心肌梗死后</td>
+                                <td>_b</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>+</td>
+                            </tr>
+                            <tr>
+                                <td>心力衰竭</td>
+                                <td>_e</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>+</td>
+                            </tr>
+                            <tr>
+                                <td>心房颤动预防</td>
+                                <td>一</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>脑血管病</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>颈动脉内中膜增厚</td>
+                                <td>+</td>
+                                <td>±</td>
+                                <td>±</td>
+                                <td>一</td>
+                                <td>一</td>
+                            </tr>
+                            <tr>
+                                <td>蛋白尿/微量白蛋白尿</td>
+                                <td>1</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>肾功能不全</td>
+                                <td>±</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>+d</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>老年</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>±</td>
+                            </tr>
+                            <tr>
+                                <td>糖尿病</td>
+                                <td>±</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td></td>
+                                <td>一</td>
+                            </tr>
+                            <tr>
+                                <td>血脂异常</td>
+                                <td>±</td>
+                                <td>+</td>
+                                <td>+</td>
+                                <td>二</td>
+                                <td>1</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- 图片内容元素的div--如果没有图片内容则删除此div元素 -->
+                    <div class="w-full mb-5">
+                        <img src="https://test-docdiff.kydev.net/config/image/kv.png" alt="kv" class="w-full h-auto" />
+                    </div>
+                </section>
+            </section>
+            <!-- section-模板一 -->
+            <!-- #5ac7c6 -->
+            <section class="w-full relative shadow-xl shadow-white/50">
+                <section class="w-full text-2xl font-bold text-white bg-gradient-to-r from-[#5ac7c6] to-[#0082b4] rounded-t-md p-5 pl-[60px] relative">
+                    <img src="https://test-docdiff.kydev.net/config/image/icon.png" alt="icon" class="w-[80px] h-auto absolute top-0 left-0" />
+                    <span class="relative z-10">复发风险新认知</span>
+                </section>
+                <section class="w-full bg-white border-2 border-[#9adada] rounded-b-md p-4">
+                    <span>早期高效治疗作为多发性硬化管理的重要环节，能够更好帮助患者达到NEDA-3的治疗目标，中国临床也及时更新纳入新一代CD20单抗-奥法妥木单抗，为多发性硬化患者提供了及早达到治疗目标，同时高效兼安的新手段。                    </span>
+                    <img src="https://test-docdiff.kydev.net/config/image/p1.png" alt="p1" class="my-5 w-full h-auto" />
+                    <span>这里可以随意插入table表格 但表格主题配色必须符合主题色：#9adada</span>
+                </section>
+            </section>
+        </main>
+        <!-- 底部 -->
+        <footer>
+            <section class="w-full p-10 pb-20 text-white text-base" style="text-align: center;">
+                <section class="text-left pb-10 text-[#999] text-base">
+                    <!-- 参考标题 -->
+                    <p class="">参考文献：</p>
+                    <!-- 文献内容 -->
+                    <div class="w-full">
+                        <!-- 文献内容: 可循环使用插入多条参考文献 -->
+                        <ol>
+                            <li>
+                                Hauser SL,et al.Presented at ECTRlMS 2019.0P336.
+                            </li>
+                            <li>
+                                Heinz Wiendl,et al. ePresentation at the annual meeting of the European Academy of
+                                Neurology, 2020
+                            </li>
+                            <li>
+                                Hauser Sl et al Presented at EAN 2020.LB62
+                            </li>
+                            <li>
+                                奥法妥木单抗注射液说明书.2021年12月20日:
+                            </li>
+                            <li>
+                                GoldR,KapposL,ArnoldDL,etal.NEnelMed.2012:367(12):1098 107
+                            </li>
+                            <li>
+                                Roos l, et al. Brain 2020,143:2742 2756.
+                            </li>
+                            <li>
+                                富马酸二甲酯肠溶胶囊说明书.2021年04月13日
+                            </li>
+                            <li>
+                                特立氟胺片说明书:2018年7月18日.
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="w-full px-[120px] relative flex flex-row justify-center items-center">
+                    <span class="text-sm text-[#333333]">
+                        MCC号KES22033138有效期2023-03-25，资料过期，视同作废。
+                    </span>
+                    <img src="https://test-docdiff.kydev.net/config/image/logo2.png" alt="logo" class="w-[120px] h-auto absolute bottom-0 right-[0.1rem]">
+                </section>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
